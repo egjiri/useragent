@@ -1,7 +1,7 @@
 class UserAgent
 
   def initialize(user_agent)
-    @user_agent = user_agent.downcase
+    @user_agent = user_agent.downcase if user_agent
   end
 
   # defines methods such as webkit?, iphone?, etc.
